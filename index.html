@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sean's Extension</title>
+    <style>
+      body {
+        background: white;
+      }
+    </style>
+</head>
+<body>
+    <h1>Seans Plugin</h1>
+
+    <button>Open Image</button>
+
+    <script type="text/javascript" src="./host/csinterface.js"></script>
+    <script type="text/javascript" src="./host/index.js"></script>
+
+    <script>
+      var csInterface = new CSInterface();
+      var openButton = document.querySelector("button")
+
+      openButton.addEventListener("click", function() {
+        csInterface.evalScript("openDocument()")
+      })
+    </script>
+</body>
+</html>
