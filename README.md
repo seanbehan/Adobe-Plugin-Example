@@ -3,9 +3,9 @@
 
 Put this in repo under...
 
-``sh
+```sh
 ~/Library/Application\ Support/Adobe/CEP/extensions/com.seanbehan
-``
+```
 
 ### More Info
 
